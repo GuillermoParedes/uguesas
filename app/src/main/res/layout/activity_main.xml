@@ -29,9 +29,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton"
+            android:id="@+id/b1"
             android:layout_gravity="left|top"
             android:background="@drawable/hconfideitos"
+            android:onClick="mostrarHambur"
             />
 
         <TextView
@@ -46,9 +47,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton2"
+            android:id="@+id/b2"
             android:layout_gravity="center_horizontal|top"
-            android:background="@drawable/hconhuevo"/>
+            android:background="@drawable/hconhuevo"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,9 +64,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton3"
+            android:id="@+id/b3"
             android:layout_gravity="right|top"
-            android:background="@drawable/hdoble"/>
+            android:background="@drawable/hdoble"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,9 +81,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton4"
+            android:id="@+id/b4"
             android:layout_gravity="left|center_vertical"
-            android:background="@drawable/hgemelas"/>
+            android:background="@drawable/hgemelas"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,9 +98,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton5"
+            android:id="@+id/b5"
             android:layout_gravity="center"
-            android:background="@drawable/hmariajuana"/>
+            android:background="@drawable/hmariajuana"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -110,9 +115,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton6"
+            android:id="@+id/b6"
             android:layout_gravity="right|center_vertical"
-            android:background="@drawable/hmediokilo"/>
+            android:background="@drawable/hmediokilo"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -126,9 +132,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton7"
+            android:id="@+id/b7"
             android:layout_gravity="left|bottom"
-            android:background="@drawable/hnormal"/>
+            android:background="@drawable/hnormal"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -141,9 +148,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton8"
+            android:id="@+id/b8"
             android:layout_gravity="center_horizontal|bottom"
-            android:background="@drawable/hpollo"/>
+            android:background="@drawable/hpollo"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -156,9 +164,10 @@
         <ImageButton
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:id="@+id/imageButton9"
+            android:id="@+id/b9"
             android:layout_gravity="right|bottom"
-            android:background="@drawable/hvegetal"/>
+            android:background="@drawable/hvegetal"
+            android:onClick="mostrarHambur"/>
 
         <TextView
             android:layout_width="wrap_content"
