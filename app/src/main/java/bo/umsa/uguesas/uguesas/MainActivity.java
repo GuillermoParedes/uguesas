@@ -18,6 +18,7 @@ public class MainActivity extends ActionBarActivity {
             R.drawable.hnormal, R.drawable.hpollo, R.drawable.hvegetal};
     ImageButton b1, b2, b3,b4,b5,b6,b7,b8,b9;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
