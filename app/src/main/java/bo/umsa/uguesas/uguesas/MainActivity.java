@@ -1,5 +1,6 @@
 package bo.umsa.uguesas.uguesas;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,8 @@ public class MainActivity extends ActionBarActivity {
             R.drawable.hconfideitos, R.drawable.hconhuevo, R.drawable.hdoble,
             R.drawable.hgemelas,R.drawable.hmariajuana, R.drawable.hmediokilo,
             R.drawable.hnormal, R.drawable.hpollo, R.drawable.hvegetal};
+    Intent intent;
+    Bundle bundle;
     ImageButton b1;
     ImageButton b2;
     ImageButton b3;
@@ -40,33 +43,70 @@ public class MainActivity extends ActionBarActivity {
         b7 = (ImageButton) findViewById(R.id.b7);
         b8 = (ImageButton) findViewById(R.id.b8);
         b9 = (ImageButton) findViewById(R.id.b9);
+        bundle = new Bundle();
         switch(view.getId()) {
                     case R.id.b1:
-                        Toast.makeText(getApplication(),"R.id.b1", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B1");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b1", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b2:
-                        Toast.makeText(getApplication(),"R.id.b2", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B2");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b2", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b3:
-                        Toast.makeText(getApplication(),"R.id.b3", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B3");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b3", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b4:
-                        Toast.makeText(getApplication(),"R.id.b4", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B4");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b4", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b5:
-                        Toast.makeText(getApplication(),"R.id.b5", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B5");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b5", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b6:
-                        Toast.makeText(getApplication(),"R.id.b6", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B6");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b6", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b7:
-                        Toast.makeText(getApplication(),"R.id.b7", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B7");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b7", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b8:
-                        Toast.makeText(getApplication(),"R.id.b8", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B8");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b8", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.b9:
-                        Toast.makeText(getApplication(),"R.id.b9", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this, SecondActivity.class);
+                        bundle.putString("parametro", "Button B9");
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+//                        Toast.makeText(getApplication(),"R.id.b9", Toast.LENGTH_SHORT).show();
                         break;
                     default:
                         break;
