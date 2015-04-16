@@ -30,7 +30,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/b7"
+            android:id="@+id/b1"
             android:layout_gravity="left|top"
             android:background="@drawable/hnormal"
             android:onClick="mostrarHambur"/>
@@ -146,7 +146,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="260dp"
-            android:id="@+id/b1"
+            android:id="@+id/b7"
             android:layout_gravity="left|top"
             android:background="@drawable/hconfideitos"
             android:onClick="mostrarHambur"
