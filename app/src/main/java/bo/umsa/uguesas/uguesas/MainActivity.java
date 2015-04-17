@@ -16,6 +16,9 @@ public class MainActivity extends ActionBarActivity {
             R.drawable.hconfideitos, R.drawable.hconhuevo, R.drawable.hdoble,
             R.drawable.hgemelas,R.drawable.hmariajuana, R.drawable.hmediokilo,
             R.drawable.hnormal, R.drawable.hpollo, R.drawable.hvegetal};
+    String id[] ={
+        "b1", "b2", "b3", "b2", "b4", "b5", "b6", "b7", "b8", "b9"
+    };
     Intent intent;
     Bundle bundle;
     ImageButton b1;

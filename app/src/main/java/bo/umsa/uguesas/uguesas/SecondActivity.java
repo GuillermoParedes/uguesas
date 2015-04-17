@@ -5,12 +5,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 public class SecondActivity extends ActionBarActivity {
-
+    int hamburguesas [] = {
+            R.drawable.hconfideitos, R.drawable.hconhuevo, R.drawable.hdoble,
+            R.drawable.hgemelas,R.drawable.hmariajuana, R.drawable.hmediokilo,
+            R.drawable.hnormal, R.drawable.hpollo, R.drawable.hvegetal};
+    String id[] ={
+            "b1", "b2", "b3", "b2", "b4", "b5", "b6", "b7", "b8", "b9"
+    };
+    int precios[] = {
+            15, 14, 18, 21, 25, 18, 12, 12, 15
+    };
     String parametros;
+    ImageView img;
+    TextView title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +37,9 @@ public class SecondActivity extends ActionBarActivity {
         parametros = b.getString("parametro");
 
 
-        TextView title = (TextView) findViewById(R.id.title);
 
-        title.setText(parametros);
+
+        hamburguesa(parametros);
     }
 
 
@@ -49,5 +63,62 @@ public class SecondActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void hamburguesa(String parametros){
+
+        img = (ImageView) findViewById(R.id.imageView);
+        title = (TextView) findViewById(R.id.title);
+        TextView precio = (TextView) findViewById(R.id.textView15);
+
+        switch(parametros) {
+            case "Button B1":
+                img.setImageResource(hamburguesas[0]);
+                precio.setText("PRECIO : Bs."+ precios[0]);
+                title.setText("HAMBURGUESA CON FIDEO");
+                break;
+            case "Button B2":
+                img.setImageResource(hamburguesas[1]);
+                precio.setText("PRECIO : Bs."+ precios[1]);
+                title.setText("HAMBURGUESA CON HUEVO");
+                break;
+            case "Button B3":
+                img.setImageResource(hamburguesas[2]);
+                precio.setText("PRECIO : Bs. "+ precios[2]);
+                title.setText("HAMBURGUESA DOBLE");
+                break;
+            case "Button B4":
+                img.setImageResource(hamburguesas[3]);
+                precio.setText("PRECIO : Bs. "+ precios[3]);
+                title.setText("HAMBURGUESA GEMELAS");
+                break;
+            case "Button B5":
+                img.setImageResource(hamburguesas[4]);
+                precio.setText("PRECIO : Bs. "+ precios[4]);
+                title.setText("HAMBURGUESA MARIJUANA");
+                break;
+            case "Button B6":
+                img.setImageResource(hamburguesas[5]);
+                precio.setText("PRECIO : Bs. "+ precios[5]);
+                title.setText("HAMBURGUESA 1/2 CARNE");
+                break;
+            case "Button B7":
+                img.setImageResource(hamburguesas[6]);
+                precio.setText("PRECIO : Bs. "+ precios[6]);
+                title.setText("HAMBURGUESA NORMAL");
+                break;
+            case "Button B8":
+                img.setImageResource(hamburguesas[7]);
+                precio.setText("PRECIO : Bs. "+ precios[7]);
+                title.setText("HAMBURGUESA DE POLLO");
+                break;
+            case "Button B9":
+                img.setImageResource(hamburguesas[8]);
+                precio.setText("PRECIO : Bs. "+ precios[8]);
+                title.setText("HAMBURGUESA VEGETARIANA");
+                break;
+            default:
+                break;
+        }
     }
 }

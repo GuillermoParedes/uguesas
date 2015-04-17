@@ -27,17 +27,18 @@
         android:layout_alignEnd="@+id/textView12" />
 
     <LinearLayout
-        android:layout_width="288dp"
+        android:layout_width="328dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.01" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -73,14 +74,16 @@
                 android:layout_height="wrap_content"
                 android:text="Agregar"
                 android:id="@+id/button"
-                android:layout_weight="0.50" />
+
+                android:textStyle="bold"
+                android:layout_weight="0.27" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Quitar"
                 android:id="@+id/button2"
-                android:layout_weight="0.54" />
+                android:layout_weight="0.25" />
         </LinearLayout>
 
         <Button
