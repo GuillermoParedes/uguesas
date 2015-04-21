@@ -73,16 +73,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agregar"
-                android:id="@+id/button"
-
-                android:textStyle="bold"
-                android:layout_weight="0.27" />
+                android:id="@+id/agregar"
+                android:layout_weight="0.25"
+                android:onClick="agregar"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Quitar"
-                android:id="@+id/button2"
+                android:id="@+id/quitar"
                 android:layout_weight="0.25" />
         </LinearLayout>
 
@@ -110,9 +109,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
+                android:text="0"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="NUMERO"
-                android:id="@+id/textView17"
+                android:id="@+id/cantidad"
                 android:layout_marginLeft="100dp" />
         </LinearLayout>
         <LinearLayout
@@ -133,8 +132,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="MONTO"
-                android:id="@+id/textView19"
+                android:id="@+id/precio"
                 android:layout_marginLeft="100dp" />
         </LinearLayout>
 
