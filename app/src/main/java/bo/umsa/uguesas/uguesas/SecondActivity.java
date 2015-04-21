@@ -153,4 +153,26 @@ public class SecondActivity extends ActionBarActivity {
         precio.setText(String.valueOf(pr));
 
     }
+
+    public void quitar(View view){
+        TextView can = (TextView) findViewById(R.id.cantidad);
+        TextView precio = (TextView) findViewById(R.id.precio);
+
+//        int nc = Integer.parseInt((String) cantidad.getText());
+//        nc = nc +1;
+
+        if(cantidad == 0){
+            cantidad = 0;
+            pr = 0;
+        } else {
+            cantidad -=1;
+            pr = pr - precioham;
+        }
+
+
+
+
+        can.setText(String.valueOf(cantidad));
+        precio.setText(String.valueOf(pr));
+    }
 }

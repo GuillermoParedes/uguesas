@@ -82,7 +82,8 @@
                 android:layout_height="wrap_content"
                 android:text="Quitar"
                 android:id="@+id/quitar"
-                android:layout_weight="0.25" />
+                android:layout_weight="0.25"
+                android:onClick="quitar"/>
         </LinearLayout>
 
         <Button
